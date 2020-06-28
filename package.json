@@ -1,7 +1,7 @@
 {
   "name": "coldate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node src/app.js"
   },
@@ -17,7 +17,6 @@
     "validator": "^13.1.1"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
     "nodemon": "^2.0.4"
   }
 }
