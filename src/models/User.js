@@ -25,7 +25,6 @@ const userSchema = mongoose.Schema({
     },
     mobileNo:{
         type: Number,
-        required: true,
         unique: true,
     },
     college: {
@@ -42,7 +41,6 @@ const userSchema = mongoose.Schema({
     },
     gender: {
         type: String,
-        required: true,
         enum: ['m', 'f', 'o']
     },
     skills:{
