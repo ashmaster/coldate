@@ -20,6 +20,51 @@ const userSchema = mongoose.Schema({
             }
         }
     },
+    age:{
+        type:Number
+    },
+    mobileNo:{
+        type: Number,
+        required: true,
+        unique: true,
+    },
+    college: {
+        type: String
+    },
+    branch: {
+        type: String
+    },
+    yop:{
+        type: Number
+    },
+    bio:{
+        type: String
+    },
+    gender: {
+        type: String,
+        required: true,
+        enum: ['m', 'f', 'o']
+    },
+    skills:{
+        type:Array,
+        maximum:5
+    },
+    hobbies:{
+        type:Array,
+        maximum:5
+    },
+    requested:[{
+        user_id:{type:mongoose.Schema.Types.ObjectId, ref:'User'},
+        name:{type:String}
+    }],
+    requests:[{
+        user_id:{type:mongoose.Schema.Types.ObjectId, ref:'User'},
+        name:{type:String}
+    }],
+    matches:[{
+        user_id:{type:mongoose.Schema.Types.ObjectId, ref:'User'},
+        name:{type:String}
+    }],
     password: {
         type: String,
         required: true,
