@@ -25,7 +25,6 @@ const userSchema = mongoose.Schema({
     },
     mobileNo:{
         type: Number,
-        unique: true,
     },
     college: {
         type: String
