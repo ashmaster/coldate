@@ -24,7 +24,7 @@ const userSchema = mongoose.Schema({
         type:Number
     },
     mobileNo:{
-        type:Nmuber
+        type:Number
     },
     college: {
         type: String
