@@ -23,6 +23,9 @@ const userSchema = mongoose.Schema({
     age:{
         type:Number
     },
+    mobileNo:{
+        type:Nmuber
+    },
     college: {
         type: String
     },
